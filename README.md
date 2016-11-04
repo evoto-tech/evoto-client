@@ -1,5 +1,14 @@
 # evoto-client
 
+## Example .env file
+Create a `.env` file in the root of the project. It should look something like - 
+```
+CHAIN_HOST=<host ip>
+CHAIN_PORT=<host port>
+CHAIN_USERNAME=<username>
+CHAIN_PASSWORD=<password>
+```
+
 ## Install
 - Node v4+
 - NPM v2+ or Yarn
