@@ -1,0 +1,33 @@
+html, body, #content {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  background-color: #444;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.aligner-item {
+  max-width: 50%;
+}
+
+.title {
+  color: #ffffff;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.thin-card-title {
+  padding-bottom: 0px !important;
+}
