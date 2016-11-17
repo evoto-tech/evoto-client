@@ -11,12 +11,11 @@ export default class Layout extends React.Component {
       message: 'Message',
       autoHideDuration: 4000
     }
+
     ipcRenderer.on('chain-connection', (event, message, err) => {
-      let snackMessage = ''
+      let snackMessage = 'Connected successfully!'
       if (message === 'err' && err) {
-        snackMessage = `An error occurred! (Error code: ${err.code})`
-      } else {
-        snackMessage = 'Connected successfully!'
+        snackMessage = `An error occurred! (Error code: ${err.code ? err.code : err})`
       }
       this.setState({ open: true, message: snackMessage })
     })

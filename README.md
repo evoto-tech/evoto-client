@@ -7,7 +7,12 @@ CHAIN_HOST=<host ip>
 CHAIN_PORT=<host port>
 CHAIN_USERNAME=<username>
 CHAIN_PASSWORD=<password>
+CHAIN_NAME=<chainname>
+NODE_ENV=development
 ```
+
+## Multichain processes
+Create a `multichain` folder in the project with at least the `multichaind.exe` executable in.
 
 ## Install
 - Node v4+
