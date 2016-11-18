@@ -9,12 +9,9 @@ module.exports = {
     publicPath: 'http://localhost:8080/built/'
   },
   externals: {
-    'react': {
-      root: 'React'
-    },
-    'react-doom': {
-      root: 'ReactDom'
-    }
+    'react': true,
+    'react-dom': true,
+    'react/addons': true
   },
   target: 'electron-main',
   devServer: {
