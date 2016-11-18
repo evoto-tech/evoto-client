@@ -8,6 +8,14 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: 'http://localhost:8080/built/'
   },
+  externals: {
+    'react': {
+      root: 'React'
+    },
+    'react-doom': {
+      root: 'ReactDom'
+    }
+  },
   target: 'electron-main',
   devServer: {
     contentBase: './public',
